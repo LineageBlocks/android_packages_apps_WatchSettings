@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := \
         $(call all-logtags-files-under, src)
 
-LOCAL_MODULE := settings-logtags
+LOCAL_MODULE := watchsettings-logtags
 
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
@@ -37,7 +37,8 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/appcompat/res \
     frameworks/support/v7/recyclerview/res
 
-LOCAL_PACKAGE_NAME := Settings
+LOCAL_OVERRIDE := Settings
+LOCAL_PACKAGE_NAME := WatchSettings
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 
